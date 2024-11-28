@@ -38,6 +38,7 @@ const responseDT1 = await testCollection.findById(<_ID>);
 
 /* Apply filter/where clause */
 const responseDT2 = await testCollection.all(name,["Raj","Mahesh"]);
+const responseDT3 = await testCollection.find({age:{$gt:18,$lt:25}})  
 
 /* update data base on filter */
 const testDT1 = await testCollection.updateOne({ name: /Kumar/ }, { name: "Mahesh" ,age:27});    /*Change only one data*/
