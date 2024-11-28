@@ -34,7 +34,7 @@ const responseDT = await testCollection.create(
 
 
 /*find data via _ID  */
-const responseDT1 = await testCollection.findById(<_ID>);
+const responseDT1 = await testCollection.findById("<_ID>");
 
 /* Apply filter or where clause */
 const responseDT2 = await testCollection.all(name,["Raj","Mahesh"]);
